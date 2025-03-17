@@ -6,7 +6,7 @@ PWD := $(shell pwd)
 .PHONY: release-image-public
 release-image-public: 
 	@docker rm -f build-env
-	@docker run --rm --name build-env -v $(PWD):/home/portal -w /home/portal node:18.20.7-slim /bin/bash -c "mkdir -p /tmp/node_modules/; ln -s /tmp/node_modules /home/portal/node_modules; yarn install; yarn build:trusted-cloud-private; rm -f /home/portal/node_modules"
+	@docker run --rm --name build-env -v $(PWD):/home/portal -w /home/portal node:18.20.7-slim /bin/bash -c "mkdir -p /tmp/node_modules/; ln -s /tmp/node_modules /home/portal/node_modules; yarn install; yarn build:trusted-cloud-public; rm -f /home/portal/node_modules"
 	@docker build -f Dockerfile-public -t $(OWNER)/$(IMAGE_NAME):admin-pub-$(VERSION) .
 
 .PHONY: release-image-private
@@ -18,5 +18,5 @@ release-image-private:
 .PHONY: release-image-system
 release-image-system: 
 	@docker rm -f build-env
-	@docker run --rm --name build-env -v $(PWD):/home/portal -w /home/portal node:18.20.7-slim /bin/bash -c "mkdir -p /tmp/node_modules/; ln -s /tmp/node_modules /home/portal/node_modules; yarn install; yarn build:trusted-cloud-private; rm -f /home/portal/node_modules"
+	@docker run --rm --name build-env -v $(PWD):/home/portal -w /home/portal node:18.20.7-slim /bin/bash -c "mkdir -p /tmp/node_modules/; ln -s /tmp/node_modules /home/portal/node_modules; yarn install; yarn build:trusted-cloud-system; rm -f /home/portal/node_modules"
 	@docker build -f Dockerfile-system -t $(OWNER)/$(IMAGE_NAME):admin-sys-$(VERSION) .
