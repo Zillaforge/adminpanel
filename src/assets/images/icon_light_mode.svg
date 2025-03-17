@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="48" viewBox="0 0 74 48">
+  <defs>
+    <filter id="Ellipse_296" x="3" y="6" width="42" height="42" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Switches_Light_mode_2" data-name="Switches_Light mode 2" transform="translate(-1408.275 6)">
+    <rect id="bound_Hover" width="74" height="48" rx="24" transform="translate(1408.275 -6)" fill="none"/>
+    <rect id="Rectangle_2025" data-name="Rectangle 2025" width="54" height="28" rx="14" transform="translate(1418.275 4)" fill="#fff"/>
+    <g id="Light" transform="translate(-27)">
+      <g transform="matrix(1, 0, 0, 1, 1435.28, -6)" filter="url(#Ellipse_296)">
+        <circle id="Ellipse_296-2" data-name="Ellipse 296" cx="12" cy="12" r="12" transform="translate(12 12)" fill="#665eff"/>
+      </g>
+      <g id="icon" transform="translate(12756.275 17153)">
+        <rect id="Rectangle_2024" data-name="Rectangle 2024" width="20" height="20" transform="translate(-11307 -17145)" fill="none"/>
+        <path id="light_mode_FILL0_wght400_GRAD0_opsz24" d="M10,12.455A2.444,2.444,0,0,0,12.455,10,2.444,2.444,0,0,0,10,7.545,2.444,2.444,0,0,0,7.545,10,2.444,2.444,0,0,0,10,12.455Zm0,1.636A4.087,4.087,0,0,1,5.909,10,4.085,4.085,0,0,1,10,5.909,4.084,4.084,0,0,1,14.091,10,4.085,4.085,0,0,1,10,14.091ZM1.818,10.818a.818.818,0,1,1,0-1.636H3.455a.818.818,0,1,1,0,1.636Zm14.727,0a.818.818,0,1,1,0-1.636h1.636a.818.818,0,1,1,0,1.636ZM10,4.273a.8.8,0,0,1-.818-.818V1.818a.818.818,0,1,1,1.636,0V3.455A.8.8,0,0,1,10,4.273ZM10,19a.8.8,0,0,1-.818-.818V16.545a.818.818,0,1,1,1.636,0v1.636A.8.8,0,0,1,10,19ZM4.8,5.95l-.88-.859a.713.713,0,0,1-.236-.573.889.889,0,0,1,.236-.593.808.808,0,0,1,.593-.245.743.743,0,0,1,.573.245l.859.88a.841.841,0,0,1,0,1.145.7.7,0,0,1-.562.235A.874.874,0,0,1,4.8,5.95Zm10.1,10.125-.859-.88a.833.833,0,0,1-.225-.583.764.764,0,0,1,.225-.563.7.7,0,0,1,.563-.235.873.873,0,0,1,.583.235l.88.859a.713.713,0,0,1,.236.573.889.889,0,0,1-.236.593.808.808,0,0,1-.593.245.743.743,0,0,1-.573-.245ZM14.05,5.95a.7.7,0,0,1-.235-.563A.873.873,0,0,1,14.05,4.8l.859-.88a.713.713,0,0,1,.573-.236.889.889,0,0,1,.593.236.808.808,0,0,1,.245.593.743.743,0,0,1-.245.573l-.88.859a.841.841,0,0,1-1.145,0ZM3.925,16.075a.808.808,0,0,1-.245-.593.743.743,0,0,1,.245-.573l.88-.859a.834.834,0,0,1,.583-.225.763.763,0,0,1,.562.225.7.7,0,0,1,.236.563.876.876,0,0,1-.236.583l-.859.88a.711.711,0,0,1-.573.235.886.886,0,0,1-.593-.235ZM10,10Z" transform="translate(-11307 -17145)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

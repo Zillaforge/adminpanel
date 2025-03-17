@@ -1,0 +1,46 @@
+.quota-table {
+  .right-border {
+    border-right: 1px solid rgb(var(--v-theme-card-quota-table-border));
+  }
+  .header-bg {
+    background-color: rgb(var(--v-theme-card-quota-table-bg));
+  }
+  .text-color {
+    color: rgba(var(--v-theme-card-quota-table-text), 0.6);
+  }
+  .row-bg {
+    background-color: rgb(var(--v-theme-table-container-bg)) !important;
+  }
+}
+
+.text-color-test {
+  color: rgba(var(--v-theme-card-quota-table-text), 0.6);
+}
+
+table.v-table tbody td:first-child,
+table.v-table thead th:first-child {
+  padding: 0 5px 0 16px;
+}
+table.v-table tbody td:not(:first-child),
+table.v-table tbody th:not(:first-child),
+table.v-table thead td:not(:first-child),
+table.v-table thead th:not(:first-child) {
+  padding: 0 5px;
+}
+
+table.v-table thead tr {
+  height: 48px;
+}
+
+.v-table.quota-table {
+  tbody tr:hover {
+    background-color: transparent !important;
+    border-bottom: 1px solid rgb(var(--v-theme-card-quota-table-border));
+  }
+}
+
+.table--no-data tbody tr:hover {
+  background-color: transparent !important;
+  box-shadow: none;
+  border-bottom: 1px solid rgb(var(--v-theme-card-quota-table-border));
+}

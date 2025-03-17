@@ -1,0 +1,29 @@
+:root {
+  //@deprecated
+  --text-active-color: #306eb3;
+}
+
+// common
+.container-card-bg {
+  background-color: rgb(var(--v-theme-table-container-bg)) !important;
+}
+
+.text-highlight {
+  color: rgb(var(--v-theme-text-highlight)) !important;
+}
+
+.delete-alert {
+  background-color: transparent;
+  color: rgb(var(--v-theme-alert-color)) !important;
+}
+
+.menu-item-icon-color {
+  color: rgb(var(--v-theme-menu-item-icon)) !important;
+}
+
+.card-bg-color {
+  background-color: rgba(
+    var(--v-theme-card-creation-bg),
+    var(--v-card-creation-bg-opacity)
+  ) !important;
+}

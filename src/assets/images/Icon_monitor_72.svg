@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="Icon_資源監控_72" transform="translate(8938.999 -13013)">
+    <circle id="Ellipse_1067" data-name="Ellipse 1067" cx="36" cy="36" r="36" transform="translate(-8938.999 13013)" fill="#546ca9"/>
+    <g id="speed-32px" transform="translate(-8918.999 13033)">
+      <path id="Path_2522" data-name="Path 2522" d="M0,0H32V32H0Z" fill="none"/>
+      <path id="Path_2523" data-name="Path 2523" d="M26.5,10.081l-1.64,2.467a10.667,10.667,0,0,1-.293,10.107H6.083A10.667,10.667,0,0,1,20.1,7.787l2.467-1.64A13.333,13.333,0,0,0,3.789,23.987a2.667,2.667,0,0,0,2.293,1.333H24.549a2.667,2.667,0,0,0,2.32-1.333,13.333,13.333,0,0,0-.36-13.92ZM13.443,19.2a2.667,2.667,0,0,0,3.773,0l7.547-11.32-11.32,7.547a2.667,2.667,0,0,0,0,3.773Z" transform="translate(0.967 0.962)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

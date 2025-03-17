@@ -1,0 +1,30 @@
+.circle-icon-list
+  .action-button-style
+  .v-btn--disabled.v-btn--variant-elevated
+  .v-btn__overlay {
+  opacity: 0 !important;
+}
+
+.v-btn--disabled.more-action-btn .v-btn__overlay {
+  opacity: 0 !important;
+}
+
+.v-btn--disabled .v-btn__overlay {
+  opacity: 0 !important;
+}
+
+.action-button-style {
+  width: 52px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-icon-list {
+  span span .v-btn .v-btn--density-comfortable {
+    &:hover {
+      background-color: rgb(var(--v-theme-table-icon-hover-bg)) !important;
+    }
+  }
+}

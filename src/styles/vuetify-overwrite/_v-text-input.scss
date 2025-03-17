@@ -1,0 +1,14 @@
+.v-field--variant-solo {
+  box-shadow: none;
+  border: 1px solid #00000029;
+  border-radius: 4px;
+}
+
+.v-textarea--auto-grow .v-field__input {
+  overflow-y: auto;
+}
+
+.v-messages__message::before {
+  content: '*';
+  color: rgb(var(--v-theme-alert-color));
+}

@@ -1,0 +1,201 @@
+pre {
+  font-family: Arial, sans-serif, 'Roboto' !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headline-style {
+  font-size: 24px !important;
+  font-weight: 400;
+  line-height: 32px !important;
+  letter-spacing: normal !important;
+}
+
+.headline-style {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  white-space: pre-line;
+}
+
+.title {
+  font-size: 20px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.02em !important;
+}
+
+// copy from test-h6 without font-family
+.title-style {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.0125em !important;
+  text-transform: none !important;
+}
+
+.form-title {
+  line-height: 60px;
+  text-align: left;
+  padding: 0px; // overwrite the padding config of v-col-x
+}
+
+.ocis-form-title {
+  line-height: 60px;
+  text-align: left;
+  padding: 0px; // overwrite the padding config of v-col-x
+}
+
+.form-title-compact {
+  line-height: 24px;
+  text-align: left;
+}
+
+.form-content-compact {
+  display: flex;
+  line-height: 24px;
+  text-align: left;
+}
+
+.form-content-compact-gray {
+  display: flex;
+  line-height: 24px;
+  text-align: left;
+  color: lightgray;
+}
+
+.form-content-compact-red {
+  display: flex;
+  font-size: 16px !important;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(var(--v-theme-alert-color)) !important;
+}
+
+.form-title-compact40 {
+  font-size: 16px !important;
+  line-height: 40px;
+  text-align: left;
+}
+
+.form-content-compact40 {
+  display: flex;
+  line-height: 40px;
+  text-align: left;
+}
+
+.form-content-compact40-gray {
+  display: flex;
+  line-height: 40px;
+  text-align: left;
+  color: lightgray;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  min-width: calc(var(--v-content-min-width) - var(--v-menu-width));
+  margin: 0px !important;
+  padding: 20px 64px 0px;
+  align-content: flex-start;
+  height: calc(
+    100vh - var(--v-app-bar-height-px) - var(--v-breadcrumb-height-px) -
+      var(--v-scrollbar-height-px)
+  );
+  &.contain-footer {
+    height: calc(
+      100vh - var(--v-app-bar-height-px) - var(--v-breadcrumb-height-px) -
+        var(--v-footer-height-px) - var(--v-scrollbar-height-px)
+    );
+  }
+}
+
+.ocis-external-link {
+  text-underline-position: under;
+  font-size: 16px !important;
+  color: rgb(var(--v-theme-text-highlight)) !important;
+  cursor: pointer;
+  &:not(:hover) {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(var(--v-theme-primary));
+  }
+}
+
+.external-link {
+  text-underline-position: under;
+  font-size: 16px !important;
+}
+
+.external-link-color {
+  color: rgb(var(--v-theme-text-highlight)) !important;
+}
+
+.alert {
+  color: rgb(var(--v-theme-alert-color)) !important;
+}
+
+.input-required::after {
+  content: ' *';
+  color: rgb(var(--v-theme-alert-color));
+}
+
+.ocis-input-required::after {
+  content: ' *';
+  color: rgb(var(--v-theme-alert-color));
+}
+
+.table-last-updated-time {
+  display: flex;
+  color: rgb(var(--v-theme-text-highlight));
+  align-items: center;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-default {
+  cursor: default;
+}
+
+.copy-icon {
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.copied-text {
+  margin-left: 6px;
+  vertical-align: -webkit-baseline-middle;
+  color: rgb(var(--v-theme-text-highlight));
+}
+
+.ocis-combobox-menu :is(.v-list-item--active) {
+  .v-list-item-title {
+    color: rgba(var(--v-theme-text-general), var(--v-text-general-opacity));
+  }
+  .v-list-item-subtitle {
+    opacity: var(
+      --v-list-item-subtitle-opacity,
+      var(--v-medium-emphasis-opacity)
+    );
+    color: rgba(var(--v-theme-text-general), var(--v-text-general-opacity));
+  }
+}

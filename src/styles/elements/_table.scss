@@ -1,0 +1,116 @@
+.disabled {
+  filter: opacity(0.3);
+}
+
+.searchInput {
+  &.v-text-field {
+    .v-input__control {
+      min-height: 40px;
+      height: 40px;
+      .v-field {
+        box-shadow: none !important;
+        background: rgba(
+          var(--v-theme-table-search-input-bg),
+          var(--v-table-search-input-bg-opacity)
+        ) !important;
+      }
+      .v-field--variant-solo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.detail_table_shadow {
+  box-shadow: none;
+  border: 1px solid
+    rgba(
+      var(--v-theme-detail-table-border-color),
+      var(--v-detail-table-border-color-opacity)
+    ) !important;
+  border-radius: 2px;
+}
+
+.more-action-list {
+  border: 1px solid rgba(var(--v-theme-border), var(--v-list-border-opacity)) !important;
+  .v-btn__content {
+    // table: menu item text
+    color: rgba(
+      var(--v-theme-text-general),
+      var(--v-text-general-opacity)
+    ) !important;
+  }
+
+  .more-action-btn {
+    // table menu item button
+    width: 100%;
+    &:hover {
+      background-color: rgba(
+        var(--v-theme-table-more-action-hover-bg),
+        var(--v-table-more-action-hover-bg-opacity)
+      ) !important;
+      // background-color: red !important;
+      border: 0px !important;
+    }
+  }
+}
+
+#tableMoreBtn {
+  opacity: 1 !important;
+  &:hover {
+    background-color: rgba(
+      var(--v-theme-table-more-action-hover-bg),
+      var(--v-table-more-action-hover-bg-opacity)
+    ) !important;
+  }
+  &:not(:hover) {
+    color: inherit !important;
+    background-color: inherit !important;
+  }
+  .v-btn__overlay {
+    background-color: inherit;
+    border-radius: inherit;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.table-more-btn {
+  opacity: 1 !important;
+  &:hover {
+    background-color: rgba(
+      var(--v-theme-table-more-action-hover-bg),
+      var(--v-table-more-action-hover-bg-opacity)
+    ) !important;
+  }
+  &:not(:hover) {
+    color: inherit !important;
+    background-color: inherit !important;
+  }
+  .v-btn__overlay {
+    background-color: inherit;
+    border-radius: inherit;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.table-card {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 24px 24px 24px !important;
+  background-color: rgb(var(--v-theme-card-bg)) !important;
+}
+
+.table-container {
+  border: 1px solid rgb(var(--v-theme-card-quota-table-border));
+  &.no-border {
+    border: none;
+  }
+}
+
+.table-border {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid rgba(var(--v-theme-border), var(--v-border-opacity));
+}

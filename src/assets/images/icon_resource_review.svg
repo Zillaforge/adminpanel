@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="组_17056" data-name="组 17056" transform="translate(-900 -480)">
+    <g id="组_1" data-name="组 1">
+      <g id="icon" transform="translate(-524 -289)">
+        <circle id="椭圆_116" data-name="椭圆 116" cx="60" cy="60" r="60" transform="translate(1424 769)" fill="#aab1c3"/>
+      </g>
+    </g>
+    <g id="fact_check_24dp_5F6368_1_" data-name="fact_check_24dp_5F6368 (1)" transform="translate(927.881 507.881)">
+      <g id="组_17053" data-name="组 17053">
+        <rect id="矩形_6298" data-name="矩形 6298" width="64" height="64" transform="translate(0.119 0.119)" fill="none"/>
+      </g>
+      <g id="组_17055" data-name="组 17055" transform="translate(5.353 8.03)">
+        <g id="组_17054" data-name="组 17054">
+          <path id="路径_22872" data-name="路径 22872" d="M50.178,3H7.353A5.369,5.369,0,0,0,2,8.353V45.825a5.369,5.369,0,0,0,5.353,5.353H50.178a5.369,5.369,0,0,0,5.353-5.353V8.353A5.369,5.369,0,0,0,50.178,3Zm0,42.825H7.353V8.353H50.178Z" transform="translate(-2 -3)" fill="#fff" fill-rule="evenodd"/>
+          <path id="路径_22873" data-name="路径 22873" d="M31.833,12.8,28.033,9l-8.485,8.485-3.774-3.8L12,17.458l7.548,7.6Z" transform="translate(14.766 7.059)" fill="#fff" fill-rule="evenodd"/>
+          <rect id="矩形_6299" data-name="矩形 6299" width="14" height="5" transform="translate(7.766 11.089)" fill="#fff"/>
+          <rect id="矩形_6300" data-name="矩形 6300" width="14" height="6" transform="translate(7.766 21.089)" fill="#fff"/>
+          <rect id="矩形_6301" data-name="矩形 6301" width="14" height="5" transform="translate(7.766 32.089)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

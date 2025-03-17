@@ -1,0 +1,22 @@
+.v-text-field {
+  .v-input__control {
+    .v-field {
+      &:not(.v-field--variant-plain, .v-field--variant-outlined) {
+        border: 1px solid
+          rgba(
+            var(--v-theme-input-default-border),
+            var(--v-input-default-border-opacity)
+          ) !important;
+        &:hover {
+          border: 1px solid rgb(var(--v-theme-main-color)) !important;
+        }
+        &.v-field--focused {
+          border: 1px solid rgb(var(--v-theme-main-color)) !important;
+        }
+        &.v-field--error {
+          border: 1px solid rgb(var(--v-theme-alert-color)) !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="icon_Container_Service_32" data-name="icon_Container Service_32" transform="translate(-1123 -665)">
+    <circle id="Ellipse_116" data-name="Ellipse 116" cx="36" cy="36" r="36" transform="translate(1123 665)" fill="#665eff"/>
+    <rect id="Rectangle_1650" data-name="Rectangle 1650" width="32" height="32" transform="translate(1143 685)" fill="#fff" opacity="0"/>
+    <g id="icon_24" data-name="icon 24" transform="translate(1145 686)">
+      <rect id="Bounds" width="32" height="32" transform="translate(-2 -1)" fill="#fff" opacity="0"/>
+      <path id="Cube" d="M27.935,24.13l-12,6.051a.06.06,0,0,0-.039.009,1.292,1.292,0,0,1-1.164-.009l-12-6.051A1.333,1.333,0,0,1,2,22.942V8.416a1.319,1.319,0,0,1,.16-.611c.009-.017.013-.035.023-.052A1.32,1.32,0,0,1,2.6,7.322c.015-.011.021-.029.037-.039s.023,0,.033-.011a.309.309,0,0,1,.064-.044l12-6.051a1.333,1.333,0,0,1,1.2,0l12,6.051c.024.012.041.031.064.044s.023,0,.033.011a.251.251,0,0,0,.037.039,1.319,1.319,0,0,1,.416.433c.009.016.013.033.021.049a1.321,1.321,0,0,1,.16.613V22.942A1.333,1.333,0,0,1,27.935,24.13ZM4.667,22.123,14,26.83V15.287L4.667,10.58V22.122ZM15.333,3.856,6.291,8.416,8.5,9.53l6.836,3.447,9.043-4.56Z" transform="translate(-1.333 -0.702)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

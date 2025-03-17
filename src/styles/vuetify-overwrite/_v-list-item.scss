@@ -1,0 +1,32 @@
+.v-list {
+  padding: 0px;
+}
+
+.v-list-item {
+  &:hover {
+    background-color: rgba(
+      var(--v-theme-menu-item-hover-bg),
+      var(--v-menu-item-hover-bg-opacity)
+    );
+  }
+}
+
+.v-list-item--active {
+  color: rgb(var(--v-theme-text-active-color));
+}
+.v-list-item--variant-text .v-list-item__overlay {
+  background: transparent;
+}
+
+.v-list-item__prepend > .v-icon,
+.v-list-item__append > .v-icon {
+  opacity: 1 !important;
+}
+
+.v-select__content,
+.v-overlay__content {
+  .v-list {
+    height: 100%;
+    background-color: rgb(var(--v-theme-list-bg)) !important;
+  }
+}

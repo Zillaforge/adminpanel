@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="组_3029" data-name="组 3029" transform="translate(-898 -491)">
+    <g id="icon" transform="translate(-526 -278)">
+      <circle id="椭圆_116" data-name="椭圆 116" cx="60" cy="60" r="60" transform="translate(1424 769)" fill="#aab1c3"/>
+    </g>
+    <g id="icon_24dp" transform="translate(934 527)">
+      <path id="bound" d="M0,0H47.15V47.15H0Z" fill="none"/>
+      <path id="exposure_FILL0_wght400_GRAD0_opsz24" d="M8.239,50.15a5.051,5.051,0,0,1-3.7-1.538A5.051,5.051,0,0,1,3,44.911V8.239a5.051,5.051,0,0,1,1.538-3.7A5.051,5.051,0,0,1,8.239,3H44.911a5.051,5.051,0,0,1,3.7,1.538,5.051,5.051,0,0,1,1.538,3.7V44.911a5.25,5.25,0,0,1-5.239,5.239Zm0-5.239H44.911V8.239Zm24.885-2.619V37.053H27.885V33.124h5.239V27.885h3.929v5.239h5.239v3.929H37.053v5.239ZM10.858,17.407h13.1V13.478h-13.1Z" transform="translate(-3 -3)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,142 @@
+@import 'base/colors.scss';
+@import 'base/basic.scss';
+@import 'base/layout.scss';
+
+@import 'elements/card';
+@import 'elements/table';
+@import 'elements/buttons';
+@import 'components/quota-table';
+
+@import 'vuetify-overwrite/v-card.scss';
+@import 'vuetify-overwrite/v-input.scss';
+@import 'vuetify-overwrite/v-text-input.scss';
+@import 'vuetify-overwrite/v-list-item.scss';
+@import 'vuetify-overwrite/v-slider.scss';
+@import 'vuetify-overwrite/v-tooltip.scss';
+@import 'vuetify-overwrite/v-toolbar.scss';
+
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional');
+
+$body-font-family-tw: 'Noto Sans TC', 'Roboto', sans-serif !important;
+$body-font-family-en: Arial, 'Noto Sans TC', '微軟正黑體', sans-serif, 'Roboto' !important;
+
+body {
+  /* 先套用 Noto Sans TC 這個 思源黑體 */
+  // font-family: $body-font-family-tw;
+  &:lang(en) {
+    font-family: $body-font-family-en;
+  }
+  &:lang(tw) {
+    font-family: $body-font-family-tw;
+  }
+}
+#app {
+  &:lang(en) {
+    font-family: $body-font-family-en;
+  }
+  &:lang(tw) {
+    font-family: $body-font-family-tw;
+  }
+}
+
+body {
+  span,
+  div,
+  label {
+    font-size: 14px !important;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.clickable {
+  cursor: pointer;
+}
+
+.menu-text-color {
+  color: rgb(var(--v-theme-menu-text)) !important;
+}
+
+.navigation-bg-color {
+  background-color: rgb(var(--v-theme-menu-bg)) !important;
+}
+
+.menu-list {
+  border: 1px solid rgba(var(--v-theme-border), var(--v-list-border-opacity)) !important;
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 56px !important;
+}
+
+.v-hover:hover {
+  cursor: pointer;
+}
+
+.v-breadcrumbs-item--disabled {
+  opacity: 1;
+}
+
+.v-no-hover,
+.v-data-table-rows-no-data {
+  &:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-bottom: 0px solid #0000001f !important;
+    cursor: default !important;
+  }
+}
+
+.mfa-config .v-stepper-header {
+  display: none !important;
+}
+
+.v-chip--disabled {
+  opacity: 0.5;
+}
+
+.v-radio,
+.v-checkbox-btn {
+  .v-selection-control__input {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    &:hover {
+      background-color: rgb(var(--v-theme-table-icon-hover-bg));
+      border-radius: 50%;
+    }
+    .v-ripple__container {
+      top: 0px;
+      left: 1px;
+      width: 38px;
+      height: 38px;
+      color: rgb(var(--v-theme-ripple-color)) !important;
+    }
+  }
+}
+
+.v-btn__overlay {
+  opacity: 0 !important;
+}
+
+.v-ripple__animation--in {
+  opacity: var(--v-ripple-opacity) !important;
+}
+
+.v-ripple__container {
+  color: rgb(var(--v-theme-ripple-color)) !important;
+}

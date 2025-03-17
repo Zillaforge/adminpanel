@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.165" height="44" viewBox="0 0 52.165 44">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0964c1"/>
+      <stop offset="0.8" stop-color="#01c8f2"/>
+    </linearGradient>
+  </defs>
+  <g id="Cloud_Infra_Logo_" data-name="Cloud Infra Logo " transform="translate(358.632 -249)">
+    <path id="Cloud" d="M258.977,164.152V146.14a9.013,9.013,0,0,0-5.27,2.315A12.666,12.666,0,0,0,232.813,161.8a9.044,9.044,0,0,0,2.6,17.707h23.563Z" transform="translate(-585 113.49)" fill="#01c8f2" fill-rule="evenodd"/>
+    <path id="Cube" d="M9.778,44V39.926h4.074V44ZM4.889,44V39.926H8.963V44ZM0,44V39.926H4.074V44Zm14.667-4.889V35.037h4.074v4.074Zm-4.889,0V35.037h4.074v4.074Zm-4.889,0V35.037H8.963v4.074ZM0,39.111V35.037H4.074v4.074Zm14.667-4.889V30.148h4.074v4.074Zm-4.889,0V30.148h4.074v4.074Zm-4.889,0V30.148H8.963v4.074ZM0,34.222V30.148H4.074v4.074Zm14.667-4.889V25.259h4.074v4.074Zm-4.889,0V25.259h4.074v4.074Zm-4.889,0V25.259H8.963v4.074ZM0,29.333V25.259H4.074v4.074Zm9.778-4.889V20.37h4.074v4.074Zm-4.889,0V20.37H8.963v4.074ZM0,24.444V20.37H4.074v4.074Zm14.667-4.889V16.3h3.259v3.259Zm-9.778,0V15.482H8.963v4.074ZM0,19.556V15.482H4.074v4.074Zm0-4.889V10.593H4.074v4.074ZM4.889,9.778V6.519H8.148V9.778ZM1.63,6.519V4.074H4.074V6.519ZM16.3,2.444V0h2.444V2.444Z" transform="translate(-325.208 249)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

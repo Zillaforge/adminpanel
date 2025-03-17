@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="组_3029" data-name="组 3029" transform="translate(-896 -490)">
+    <g id="icon" transform="translate(-528 -279)">
+      <circle id="椭圆_116" data-name="椭圆 116" cx="60" cy="60" r="60" transform="translate(1424 769)" fill="#aab1c3"/>
+    </g>
+    <g id="admin_panel_settings_black_24dp" transform="translate(932 526)">
+      <g id="组_3026" data-name="组 3026">
+        <rect id="矩形_1960" data-name="矩形 1960" width="48" height="48" fill="none"/>
+      </g>
+      <g id="组_3028" data-name="组 3028">
+        <g id="组_3027" data-name="组 3027">
+          <path id="路径_16947" data-name="路径 16947" d="M40.333,24.333a17.7,17.7,0,0,1,2.667.24V11.72L23,3,3,11.72V24.813C3,36.92,11.533,48.253,23,51a24.443,24.443,0,0,0,4.267-1.467,15.974,15.974,0,0,1,13.067-25.2Z" transform="translate(-3 -3)" fill="#fff"/>
+          <path id="路径_16948" data-name="路径 16948" d="M23.667,13A10.667,10.667,0,1,0,34.333,23.667,10.664,10.664,0,0,0,23.667,13Zm0,3.68a2.987,2.987,0,1,1-2.987,2.987A3,3,0,0,1,23.667,16.68Zm0,14.32a7.266,7.266,0,0,1-5.973-3.12C17.827,25.96,21.72,25,23.667,25s5.84.96,5.973,2.88A7.266,7.266,0,0,1,23.667,31Z" transform="translate(13.667 13.667)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

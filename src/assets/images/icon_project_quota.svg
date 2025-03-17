@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="组_1" data-name="组 1" transform="translate(-900 -480)">
+    <g id="icon" transform="translate(-524 -289)">
+      <circle id="椭圆_116" data-name="椭圆 116" cx="60" cy="60" r="60" transform="translate(1424 769)" fill="#aab1c3"/>
+    </g>
+    <g id="memory_24dp_5F6368" transform="translate(925.076 505.076)">
+      <path id="路径_22881" data-name="路径 22881" d="M0,0H70.712V70.712H0Z" fill="none"/>
+      <path id="路径_22882" data-name="路径 22882" d="M38.356,20.678H20.678V38.356H38.356ZM32.463,32.463H26.571V26.571h5.893Zm23.571-5.893V20.678H50.141V14.785a5.91,5.91,0,0,0-5.893-5.893H38.356V3H32.463V8.893H26.571V3H20.678V8.893H14.785a5.91,5.91,0,0,0-5.893,5.893v5.893H3v5.893H8.893v5.893H3v5.893H8.893v5.893a5.91,5.91,0,0,0,5.893,5.893h5.893v5.893h5.893V50.141h5.893v5.893h5.893V50.141h5.893a5.91,5.91,0,0,0,5.893-5.893V38.356h5.893V32.463H50.141V26.571ZM44.249,44.249H14.785V14.785H44.249Z" transform="translate(5.839 5.839)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

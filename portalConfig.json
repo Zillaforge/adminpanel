@@ -1,0 +1,12 @@
+{
+  "API_URL": "",
+  "BASE_DOMAIN": "",
+  "ENDPOINT_CLOUD_STORAGE": "",
+  "ENDPOINT_DOCS": "",
+  "ENDPOINT_GRAFANA": "",
+  "ENDPOINT_KIBANA": "",
+  "ENDPOINT_CEPH": "",
+  "ENDPOINT_OPENSTACK": "",
+  "IMAGE_REGISTRY": "",
+  "USER_PORTAL": ""
+}
