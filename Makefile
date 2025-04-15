@@ -46,20 +46,23 @@ release-image-system: set-version
 .PHONY: run-public-container
 run-public-container:
 	@docker run -ti --rm \
-	-p 80:80 \
-	-e API_URL=https://api.trusted-cloud.nchc.org.stg \
+	-p 8888:80 \
+	-e API_URL=http://api.127-0-0-1.nip.io:7777 \
+	-e USER_PORTAL=http://user.127-0-0-1.nip.io:9999 \
 	$(OWNER)/$(IMAGE_NAME):admin-pub-${TAG_OR_COMMIT}${IS_DIRTY}
 
 .PHONY: run-private-container
 run-private-container:
 	@docker run -ti --rm \
-	-p 80:80 \
-	-e API_URL=https://api.trusted-cloud.nchc.org.stg \
+	-p 8888:80 \
+	-e API_URL=http://api.127-0-0-1.nip.io:7777 \
+	-e USER_PORTAL=http://user.127-0-0-1.nip.io:9999 \
 	$(OWNER)/$(IMAGE_NAME):admin-pri-${TAG_OR_COMMIT}${IS_DIRTY}
 
 .PHONY: run-system-container
 run-system-container:
 	@docker run -ti --rm \
-	-p 80:80 \
-	-e API_URL=https://api.trusted-cloud.nchc.org.stg \
-	$(OWNER)/$(IMAGE_NAME):admin-sys-${TAG_OR_COMMIT}${IS_DIRTY}
+	-p 8888:80 \
+	-e API_URL=http://api.127-0-0-1.nip.io:7777 \
+	-e USER_PORTAL=http://user.127-0-0-1.nip.io:9999 \
+  $(OWNER)/$(IMAGE_NAME):admin-sys-${TAG_OR_COMMIT}${IS_DIRTY}
