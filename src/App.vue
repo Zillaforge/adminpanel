@@ -76,10 +76,10 @@ const snackbarVisibility: Ref<boolean> = ref(false);
 /** Snackbar text */
 const snackbarText: ComputedRef<string> = computed(() => globalStore.message);
 
-const language: ComputedRef<string> = computed(() =>
+const language: ComputedRef<string | null> = computed(() =>
   localStorage.getItem('locale'),
 );
-console.log('locale: ', language.value);
+// console.log('locale: ', language.value);
 
 /** Toggle Dark mode */
 const isDark: ComputedRef<string> = computed(() =>
@@ -126,11 +126,12 @@ const onSnackbarChanged = async () => {
 
 const updateLayoutStyle = () => {
   const el = document.getElementById('app');
-  const html = el.getRootNode().childNodes[1];
+  if (!el) return;
+  const html = el.getRootNode().childNodes[1] as HTMLElement;
   if (route.name !== PAGE_TYPES.LOGIN_PAGE) {
-    html.style = 'overflow-y: hidden !important';
+    html.style.cssText = 'overflow-y: hidden !important';
   } else {
-    html.style = 'overflow: auto !important';
+    html.style.cssText = 'overflow: auto !important';
   }
 };
 
