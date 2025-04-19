@@ -157,7 +157,7 @@ let myCustomLightTheme: ThemeDefinition = {
   },
 };
 
-const myCustomDarkTheme: ThemeDefinition = {
+let myCustomDarkTheme: ThemeDefinition = {
   dark: true,
   colors: {
     primary: '#2E71EB',
@@ -213,18 +213,18 @@ const myCustomDarkTheme: ThemeDefinition = {
     'navbar-bg-dark': '#303134',
     'node-group-selected-bg': '#A39FFF',
     'node-group-selected-color': '#a39fff',
-    'menu-bg': '#202124',
+    'menu-bg': '#073346',
     'menu-item-icon': '#ffffff',
     'menu-item-hover-bg': '#ffffff',
     'menu-item-selected-color': '#00d3ff',
     'menu-text': '#ffffff',
-    'page-container-bg': '#f5f5f7',
+    'page-container-bg': '#000000',
     'tab-border': '#F5F5F7',
     'tab-hover-bg': '#2A97FF',
     'table-container-bg': '#232323',
     'table-icon-bg': '#ffffff',
     'table-icon-hover-bg': '#333333',
-    'table-inner-bg': '#F5F7F8',
+    'table-inner-bg': '#000000',
     'table-updated-text': '#a39fff',
     'table-more-action-hover-bg': '#2A97FF',
     'table-more-action-text': 'ffffff',
@@ -250,7 +250,7 @@ const myCustomDarkTheme: ThemeDefinition = {
     'hover-bg': '#2A97FF',
     'hint-success': '#66DE98',
     'hint-error': '#FF7E7E',
-    'list-bg': '#FAFAFA',
+    'list-bg': '#073346',
   },
   variables: {
     'app-bar-height-px': '56px',
@@ -315,6 +315,15 @@ const customizeTheme = () => {
         'menu-item-hover-bg-opacity': '0.10',
       },
     };
+    myCustomDarkTheme = {
+      ...myCustomDarkTheme,
+      colors: {
+        ...myCustomDarkTheme.colors,
+      },
+      variables: {
+        ...myCustomDarkTheme.variables,
+      },
+    };
   } else if (APP_VERSION.includes('trusted-cloud-private')) {
     myCustomLightTheme = {
       ...myCustomLightTheme,
@@ -334,6 +343,15 @@ const customizeTheme = () => {
         'menu-item-hover-bg-opacity': '0.10',
       },
     };
+    myCustomDarkTheme = {
+      ...myCustomDarkTheme,
+      colors: {
+        ...myCustomDarkTheme.colors,
+      },
+      variables: {
+        ...myCustomDarkTheme.variables,
+      },
+    };
   } else if (APP_VERSION.includes('trusted-cloud-system')) {
     myCustomLightTheme = {
       ...myCustomLightTheme,
@@ -351,6 +369,15 @@ const customizeTheme = () => {
       variables: {
         ...myCustomLightTheme.variables,
         'menu-item-hover-bg-opacity': '0.10',
+      },
+    };
+    myCustomDarkTheme = {
+      ...myCustomDarkTheme,
+      colors: {
+        ...myCustomDarkTheme.colors,
+      },
+      variables: {
+        ...myCustomDarkTheme.variables,
       },
     };
   }

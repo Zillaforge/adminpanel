@@ -83,7 +83,7 @@ const language: ComputedRef<string | null> = computed(() =>
 
 /** Toggle Dark mode */
 const isDark: ComputedRef<string> = computed(() =>
-  configStore.theme ? 'dark' : 'light',
+  configStore.theme ? 'myCustomDarkTheme' : 'myCustomLightTheme',
 );
 
 watch(
@@ -144,7 +144,7 @@ updateLayoutStyle();
 <template>
   <!-- eslint-disable -->
   <!-- TODO fix eslint -->
-  <v-app id="app" :lang="language" :theme="theme.global.name.value">
+  <v-app id="app" :lang="language" :theme="isDark">
     <v-main class="main">
       <router-view v-slot="{Component, route}">
         <AppBar v-if="!route.meta.disableBars" />

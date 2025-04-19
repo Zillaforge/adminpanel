@@ -34,6 +34,12 @@
     </v-app-bar-title>
     <v-spacer />
 
+    <v-btn
+      v-if="enableTheme"
+      icon="mdi-theme-light-dark"
+      @click="configStore.toggleTheme"
+    />
+
     <AppBarBtnMenu
       v-if="!hideLanguage"
       :id="'settings'"
@@ -103,10 +109,15 @@ import MfaSettingDialog from '@/components/mfa/MfaSettingDialog.vue';
 
 import {ENABLE_SWITCH_REGION} from '@/constants/Constants';
 import PAGE_TYPES from '@/constants/PAGE_TYPES';
-import {useGlobal} from '@/store';
+import {useGlobal, useConfig} from '@/store';
+
+const enableTheme = computed(() => {
+  return import.meta.env.VITE_APP_ENABLE_THEME === 'true';
+});
 
 const route = useRoute();
 const globalStore = useGlobal();
+const configStore = useConfig();
 const {name: windowSizeName, smAndDown} = useDisplay();
 
 const showMFADialog = ref(false);
