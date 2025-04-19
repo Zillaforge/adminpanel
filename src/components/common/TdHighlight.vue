@@ -66,7 +66,7 @@
           <div
             v-if="isHighlight && !textLink"
             v-bind="props"
-            :style="`margin: 4px 0; color: ${textColor};`"
+            :style="`margin: 4px 0; color: ${textColor || themeTextColor};`"
             v-text="
               handleString(item, strSliceLength, isDescription, truncateId)
             "
@@ -95,6 +95,12 @@ import Light from '@/components/common/LightComponent.vue';
 import {UUIDRegex} from '@/constants/Constants';
 import useBasics from '@/composables/useBasics';
 
+import {useTheme} from 'vuetify';
+const vTheme = useTheme();
+const themeTextColor = computed(() => {
+  return vTheme.current.value.colors['text-color'];
+});
+
 const {handleCopyToClipboard} = useBasics();
 const props = defineProps({
   item: {
@@ -122,7 +128,7 @@ const props = defineProps({
   },
   textColor: {
     type: String,
-    default: 'black',
+    default: '',
   },
   isHighlight: {
     default: true,
