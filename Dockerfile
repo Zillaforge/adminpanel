@@ -40,6 +40,7 @@ COPY src                            src
 
 
 ARG MODE
+ENV MODE=$MODE
 RUN if [ "$MODE" = "public" ]; then 	        \
         yarn build:trusted-cloud-public;  	    \
     elif [ "$MODE" = "private" ]; then          \
