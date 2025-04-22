@@ -22,7 +22,8 @@
         "isudox.vscode-jetbrains-keybindings",
         "formulahendry.auto-rename-tag",
         "formulahendry.auto-close-tag",
-        "JuanJoseCarracedo.vscode-un-button-script"
+        "JuanJoseCarracedo.vscode-un-button-script",
+        "dbaeumer.vscode-eslint"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
