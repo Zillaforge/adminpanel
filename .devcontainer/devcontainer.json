@@ -37,7 +37,10 @@
           "css",
           "postcss",
           "scss"
-        ]
+        ],
+        "editor.codeActionsOnSave": {
+           "source.fixAll.eslint":"never"
+        }
       }
     }
   },
