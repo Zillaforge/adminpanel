@@ -44,7 +44,7 @@
       v-if="!hideLanguage"
       :id="'settings'"
       :menuItems="settingsMenu"
-      :btnIcon="'mdi-cog'"
+      :btnIcon="'mdi-web'"
       :showMenuItemIcon="false"
       :displayCondition="'hidden-xs'"
     />
