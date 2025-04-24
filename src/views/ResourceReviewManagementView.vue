@@ -10,6 +10,7 @@
           "
         />
         <GeneralDataTable
+          :enableToggle="true"
           :hasClickRowHandler="false"
           :items="projectReviewList"
           :last-updated-time="lastUpdatedTime"
@@ -18,7 +19,7 @@
           :more-action-list="moreActionList"
           :search="searchStr"
           :sorting-options="{
-            sortBy: 'name',
+            sortBy: 'type',
             isDescending: false,
           }"
           :table-headers="headers"

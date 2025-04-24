@@ -62,6 +62,23 @@
                   <SearchTextField v-model="searchStr" />
                 </div>
               </v-col>
+              <!-- Project Type Toggle -->
+              <v-col v-if="enableToggle">
+                <v-btn-toggle
+                  v-model="projectTypeToggle"
+                  color="primary"
+                  multiple
+                >
+                  <v-btn :value="ISERVICE_NAMESPACE">
+                    <v-icon>mdi-alpha-i</v-icon>
+                  </v-btn>
+
+                  <v-btn :value="CLOUDINFRA_NAMESPACE">
+                    <v-icon>mdi-alpha-l</v-icon>
+                  </v-btn>
+                </v-btn-toggle>
+              </v-col>
+
               <v-col
                 v-if="customBtnList.length > 0"
                 class="custom-search-bar-btn text-end align-content-center"
@@ -87,7 +104,7 @@
             v-model:items-per-page="pagination.rowsPerPage"
             v-model:sort-by="sortBy"
             :class="getTableClass"
-            :items="items"
+            :items="enableToggle ? filteredProjectTypeToggle : items"
             :item-value="tableItemKey"
             :headers="stateHeaders"
             :search="searchStr"
@@ -297,7 +314,11 @@ import {
 } from '@/interfaces/InfraDataTableInterface';
 import {formatDateSec} from '@/utils/utils';
 
+import {CLOUDINFRA_NAMESPACE, ISERVICE_NAMESPACE} from '@/constants/Constants';
+
 const globalStore = useGlobal();
+
+const projectTypeToggle = ref([CLOUDINFRA_NAMESPACE, ISERVICE_NAMESPACE]);
 
 const {t} = i18n.global;
 const emit = defineEmits([
@@ -307,6 +328,10 @@ const emit = defineEmits([
   'onRowClick',
 ]);
 const props = defineProps({
+  enableToggle: {
+    type: Boolean,
+    default: false,
+  },
   loading: {
     type: Boolean,
     default: false,
@@ -691,6 +716,12 @@ watch(
     }
   },
 );
+
+const filteredProjectTypeToggle = computed(() => {
+  return props.items.filter((item) => {
+    return projectTypeToggle.value.includes(item.namespace);
+  });
+});
 
 const getTableClass = computed(() => {
   let style = props.items.length > 0 ? 'table--has-data' : 'table--no-data';
