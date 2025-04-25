@@ -63,18 +63,33 @@
                 </div>
               </v-col>
               <!-- Project Type Toggle -->
-              <v-col v-if="enableToggle">
+              <v-col v-if="enableToggle" class="pl-1 v-col-1">
                 <v-btn-toggle
                   v-model="projectTypeToggle"
+                  class="project-toggle"
                   color="primary"
                   multiple
                 >
-                  <v-btn :value="ISERVICE_NAMESPACE">
+                  <v-btn
+                    size="x-small"
+                    :value="ISERVICE_NAMESPACE"
+                    class="border-thin"
+                  >
                     <v-icon>mdi-alpha-i</v-icon>
+                    <v-tooltip location="bottom" activator="parent">
+                      iService{{ $t('basic.project.type') }}
+                    </v-tooltip>
                   </v-btn>
 
-                  <v-btn :value="CLOUDINFRA_NAMESPACE">
-                    <v-icon>mdi-alpha-l</v-icon>
+                  <v-btn
+                    size="x-small"
+                    :value="CLOUDINFRA_NAMESPACE"
+                    class="border-thin"
+                  >
+                    <v-icon>mdi-alpha-t</v-icon>
+                    <v-tooltip location="bottom" activator="parent">
+                      {{ $t('basic.testing') }}{{ $t('basic.project.type') }}
+                    </v-tooltip>
                   </v-btn>
                 </v-btn-toggle>
               </v-col>
@@ -799,6 +814,11 @@ const itemCount = computed(() =>
 .search-wrapper {
   padding: 0px !important;
   background-color: rgb(var(--v-theme-table-inner-bg));
+}
+
+.project-toggle {
+  min-height: 40px;
+  height: 40px;
 }
 
 .custom-search-bar-btn {
