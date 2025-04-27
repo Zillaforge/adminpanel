@@ -4,6 +4,7 @@
       <v-col cols="12">
         <TitleComp :title="title" :tooltip="tooltip" />
         <GeneralDataTable
+          :enableToggle="true"
           :custom-btn-list="customBtnList"
           :hasClickRowHandler="false"
           :items="projectQuotaList"
@@ -14,7 +15,7 @@
           :no-data-setting="noDataSetting"
           :search="searchStr"
           :sorting-options="{
-            sortBy: 'name',
+            sortBy: 'codeName',
             isDescending: false,
           }"
           :table-headers="headers"
@@ -202,6 +203,7 @@ const projectQuotaList = computed(() => {
       id: proj.projectId,
       name: proj.displayName,
       codeName: proj.extra?.iservice?.projectSysCode ?? '',
+      namespace: proj.namespace,
       type:
         proj.namespace === CLOUDINFRA_NAMESPACE
           ? t('basic.project.type', {type: t('basic.testing')})

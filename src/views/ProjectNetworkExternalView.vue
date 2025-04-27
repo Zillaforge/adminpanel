@@ -8,6 +8,7 @@
           "
         />
         <GeneralDataTable
+          :enableToggle="true"
           :hasClickRowHandler="false"
           :items="projExternalNetworkList"
           :last-updated-time="lastUpdatedTime"
@@ -16,7 +17,7 @@
           :more-action-list="moreActionList"
           :search="searchStr"
           :sorting-options="{
-            sortBy: 'name',
+            sortBy: 'codeName',
             isDescending: false,
           }"
           :table-headers="headers"
@@ -143,6 +144,7 @@ const projExternalNetworkList = computed(() => {
       projectId: proj.projectId,
       name: proj.displayName,
       codeName: proj.extra?.iservice?.projectSysCode ?? '',
+      namespace: proj.namespace,
       type:
         proj.namespace === CLOUDINFRA_NAMESPACE
           ? t('basic.project.type', {type: t('basic.testing')})
