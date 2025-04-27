@@ -671,20 +671,22 @@ const getHasClickRowHandler = (item: TableItem) => {
 
 const handleCurrentItemsChanged = () => {
   const headerKeyArray = props.tableHeaders.map((header) => header.key);
-
-  pagination.value.totalItems = props.items.filter((item) => {
-    // only compare displayed columns
-    const newItem = headerKeyArray.reduce((cur, key) => {
-      return Object.assign(cur, {[key]: get(item, key)});
-    }, {});
-
-    return Object.values(newItem).some((val: any) =>
-      val
-        ?.toString()
-        .toLocaleLowerCase()
-        .includes(searchStr.value.toString().toLocaleLowerCase()),
-    );
-  }).length;
+  pagination.value.totalItems = props.items
+    .filter((item) => {
+      return projectTypeToggle.value.includes(item.namespace);
+    })
+    .filter((item) => {
+      // only compare displayed columns
+      const newItem = headerKeyArray.reduce((cur, key) => {
+        return Object.assign(cur, {[key]: get(item, key)});
+      }, {});
+      return Object.values(newItem).some((val: any) =>
+        val
+          ?.toString()
+          .toLocaleLowerCase()
+          .includes(searchStr.value.toString().toLocaleLowerCase()),
+      );
+    }).length;
 };
 
 // watch
@@ -772,9 +774,7 @@ const stateHeaders = computed(() => {
   return headers;
 });
 
-const itemCount = computed(() =>
-  searchStr.value ? pagination.value.totalItems : props.items.length,
-);
+const itemCount = computed(() => pagination.value.totalItems);
 </script>
 
 <style lang="scss" scoped>
