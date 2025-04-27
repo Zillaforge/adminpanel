@@ -44,7 +44,13 @@
           <div class="table-last-updated-time">
             <span class="text-end">
               {{ $t('basic.lastUpdated') }}
-              {{ formatDateSec(lastUpdatedTime) }}
+              {{
+                formatDateSec(
+                  typeof lastUpdatedTime === 'string'
+                    ? new Date()
+                    : lastUpdatedTime,
+                )
+              }}
             </span>
           </div>
         </div>
