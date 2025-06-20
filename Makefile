@@ -48,7 +48,7 @@ run-public-container:
 	@docker run -ti --rm \
 	-p 8888:80 \
 	-e API_URL=http://api.127-0-0-1.nip.io:7777 \
-	-e USER_PORTAL=http://user.127-0-0-1.nip.io:9999 \
+	-e USER_PORTAL=http://www.127-0-0-1.nip.io:9999 \
 	$(OWNER)/$(IMAGE_NAME):admin-pub-${TAG_OR_COMMIT}${IS_DIRTY}
 
 .PHONY: run-private-container

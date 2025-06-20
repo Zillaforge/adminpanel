@@ -39,7 +39,18 @@
           "scss"
         ],
         "editor.codeActionsOnSave": {
-           "source.fixAll.eslint":"never"
+          "source.fixAll.eslint": "never"
+        },
+        "launch": {
+          "configurations": [
+            {
+              "type": "chrome",
+              "request": "launch",
+              "name": "Launch Chrome against admin.127-0-0-1.nip.io",
+              "url": "http://admin.127-0-0-1.nip.io:3001",
+              "webRoot": "${workspaceFolder}"
+            }
+          ]
         }
       }
     }
