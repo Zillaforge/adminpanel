@@ -21,7 +21,8 @@
         "RomanKoblov.lprvw",
         "isudox.vscode-jetbrains-keybindings",
         "formulahendry.auto-rename-tag",
-        "formulahendry.auto-close-tag"
+        "formulahendry.auto-close-tag",
+        "JuanJoseCarracedo.vscode-un-button-script"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
