@@ -322,6 +322,7 @@ const customizeTheme = () => {
       },
       variables: {
         ...myCustomDarkTheme.variables,
+        'menu-item-hover-bg-opacity': '0.10',
       },
     };
   } else if (APP_VERSION.includes('trusted-cloud-private')) {
@@ -347,9 +348,11 @@ const customizeTheme = () => {
       ...myCustomDarkTheme,
       colors: {
         ...myCustomDarkTheme.colors,
+        'bg-dashboard-header': '#950014',
       },
       variables: {
         ...myCustomDarkTheme.variables,
+        'menu-item-hover-bg-opacity': '0.10',
       },
     };
   } else if (APP_VERSION.includes('trusted-cloud-system')) {
@@ -375,9 +378,11 @@ const customizeTheme = () => {
       ...myCustomDarkTheme,
       colors: {
         ...myCustomDarkTheme.colors,
+        'bg-dashboard-header': '#202A38',
       },
       variables: {
         ...myCustomDarkTheme.variables,
+        'menu-item-hover-bg-opacity': '0.10',
       },
     };
   }

@@ -94,7 +94,7 @@ const handleCopyAction = async (index: number, command: string) => {
 .btn-menu {
   height: 40px;
   border: rgba(var(--v-theme-border), var(--v-border-opacity)) 1px solid;
-  background-color: white;
+  // background-color: white;
 }
 
 .copy-icon-menu {
@@ -106,7 +106,7 @@ const handleCopyAction = async (index: number, command: string) => {
 .command-title-format {
   width: 250px;
   margin-bottom: 14px;
-  color: #00000099;
+  color: var(--v-theme-text-general);
 }
 
 .command-text-format {

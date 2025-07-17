@@ -8,7 +8,9 @@ export default defineStore(
   () => {
     /** Dark Theme mode */
     const theme: Ref<boolean> = ref(
-      window.matchMedia('(prefers-color-scheme: dark)').matches,
+      import.meta.env.VITE_APP_ENABLE_THEME === 'true'
+        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+        : false,
     );
 
     const locale: Ref<string> = ref(
